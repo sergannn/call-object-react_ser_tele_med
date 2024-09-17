@@ -6,6 +6,7 @@ import BrowserUnsupported from './components/BrowserUnsupported/BrowserUnsupport
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+console.log("ready??";
 root.render(
   DailyIframe.supportedBrowser().supported ? <App /> : <BrowserUnsupported />
 );
